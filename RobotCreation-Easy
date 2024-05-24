@@ -1,0 +1,46 @@
+// Set the fill background with a pattern or a simple color
+fill('robots'); // Adjust if needed based on available options
+
+// Define colors
+color1 = 'bluebell'; // Body color
+color2 = 'black';  // Eyes color
+color3 = 'maroon';   // Mouth or control panel color
+
+// Body of the robot
+box(300, 350, 200, 300, color1);
+
+// Eyes of the robot
+circle(350, 400, 10, color2);
+circle(450, 400, 10, color2);
+
+// Adding eyebrows to give more expression
+box(340, 390, 20, 5, color2); // Left eyebrow
+box(440, 390, 20, 5, color2); // Right eyebrow
+
+// Mouth or control panel
+box(350, 450, 100, 50, color3);
+
+// Hands - using smaller, thinner rectangles as arms
+box(250, 450, 50, 50, color1);  // Left hand
+box(500, 450, 50, 50, color1);  // Right hand
+
+// Left hand fingers
+box(550, 460, 10, 15, color1);  // Finger 1
+box(550, 480, 10, 15, color1);  // Finger 1
+
+// Right hand fingers
+box(240, 460, 10, 15, color1);  // Finger 1
+box(240, 480, 10, 15, color1);  // Finger 1
+
+// Legs - using rectangles
+box(300, 650, 50, 100, color1); // Left leg
+box(450, 650, 50, 100, color1); // Right leg
+
+// Adding boots or shoes
+box(300, 750, 60, 20, color2);  // Left shoe
+box(450, 750, 60, 20, color2);  // Right shoe
+
+// Adding a belt detail for aesthetic
+box(300, 600, 200, 30, color3); // Belt
+
+
